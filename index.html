@@ -42,7 +42,7 @@
 
 <script type="text/javascript">
 
-document.domain = document.domain.split('.').slice(-2).join()
+document.domain = document.domain.split('.').slice(-2).join('.')
 
 function calcBip32ExtendedKey(bip32RootKey, path) {
     // Check there's a root key to derive from
