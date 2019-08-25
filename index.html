@@ -98,8 +98,7 @@ $(window).on('load', () => {
                     return cb(new Error(`unrecognized address ${from}`))
                 cb(null, privateKeyBuffer)
             },
-            // rpcUrl: 'https://mainnet.infura.io/v3/bf83b330e8864f15b9782e53159997f5',
-            rpcUrl: 'https://node-green.mainnet.gnosis.pm',
+            rpcUrl: 'https://mainnet.infura.io/v3/bf83b330e8864f15b9782e53159997f5',
         });
 
         provider.send = function(method, params) {
