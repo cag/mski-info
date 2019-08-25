@@ -126,7 +126,7 @@ $(window).on('load', () => {
             frames.embedded.window.web3 = window.web3;
         })
         const url = new URL($('#url').val())
-        url.hostname = `echo.${url.hostname}.${document.domain}`
+        url.hostname = `echo_-_${url.hostname.replace(/\./g, '_-_')}.${document.domain}`
         url.protocol = location.protocol
         $embedded.attr('src', url)
     })
